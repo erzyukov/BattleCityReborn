@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02e4162d2f82124fbaf0f6a1ff32cf6, type: 3}
+  m_Name: Enemy1
+  m_EditorClassIdentifier: 
+  speed: 2
+  bulletSpeed: 6
+  animator: {fileID: 9100000, guid: dbb420c3ce2c2534f9e63084ba9239a4, type: 2}
+  onceTimeShot: 1
+  onceTimeShotDelay: 1
+  healthAmount: 1
+  scoreAmount: 100
+  minShotDelay: 0.5
+  maxShotDelay: 2

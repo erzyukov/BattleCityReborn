@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f89707104ea7f244a6745ca6e637961, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  Player:
+    Movement:
+      speed: 3
+    Fire:
+      delay: 0.4
+      speed: 6
+      improvedSpeed: 12
+    Viability:
+      healthAmount: 1
+      livesAmount: 3
+    Spawner:
+      prefab: {fileID: 8262789865146230300, guid: 8bdd193d249ea1041bebb340586e114f, type: 3}
+      spawnDelay: 0.5
+      spawnImmortalDuration: 3
+      playerOneSettings: {fileID: 11400000, guid: ec1d13de283150941b96cf704de342c0, type: 2}
+      playerTwoSettings: {fileID: 11400000, guid: f6e87f07d280fbc46a2dcf6cc38cccf8, type: 2}
+      playerOneInputSettings: {fileID: 11400000, guid: 6daabc99b3da83949a3963fe53439f26, type: 2}
+      playerTwoInputSettings: {fileID: 11400000, guid: 35173d846da0bd446b601b66589bc36b, type: 2}
+    Sound:
+      idle: {fileID: 8300000, guid: cc1be79c0fe5e84438614d0c1fc18d6f, type: 3}
+      move: {fileID: 8300000, guid: 7e56a4a37ac7b6d4cb5678be2de73ded, type: 3}
+      fire: {fileID: 8300000, guid: 9485075a1fee3e74ba068b177ed073d7, type: 3}
+      powerUp: {fileID: 8300000, guid: 957a5ca534805ae4098ef143d7b8c4f6, type: 3}
+  Bullet:
+    Spawner:
+      prefab: {fileID: 4275436893469953517, guid: 27cc1984f93cafd46b1342bdad2aa55e, type: 3}
+      playerBulletLayer:
+        serializedVersion: 2
+        m_Bits: 256
+      enemyBulletLayer:
+        serializedVersion: 2
+        m_Bits: 512
+  Explode:
+    Spawner:
+      prefab: {fileID: 3745824461469605042, guid: 0f1b6bd578caed6448f7c3a5600c2b7c, type: 3}
+  Map:
+    Destruction:
+      brickFull: {fileID: 11400000, guid: b0a31ddf3dd23a649a60bb72da023eb6, type: 2}
+      brickUpper: {fileID: 11400000, guid: 4b3a01a6fe9fded41ac949393abb6028, type: 2}
+      brickBottom: {fileID: 11400000, guid: fdf5c39fec2d80643ad2683dbae6e60a, type: 2}
+      brickLeft: {fileID: 11400000, guid: 20f06b3d7fcfec8458d53a26f15b06b5, type: 2}
+      brickRight: {fileID: 11400000, guid: 9ba52fa9a0320a24a983108a3becf8d4, type: 2}
+      concreteFull: {fileID: 11400000, guid: fd444a93b42dc634e9f3ac0209557a79, type: 2}
+    Sound:
+      brick: {fileID: 8300000, guid: 985a495ce56e8bd449221d7d3fac0250, type: 3}
+      concrete: {fileID: 8300000, guid: 900de2052a9bb6c46ae2a90a23f5a43a, type: 3}
+  Enemy:
+    Direction:
+      minTurnDelay: 2
+      maxTurnDelay: 5
+      minCollisionTurnDelay: 0.2
+      maxCollisionTurnDelay: 1
+    Spawner:
+      prefab: {fileID: 6155562047266846260, guid: a5244c81d4cf53b4998b4a2cced0538f, type: 3}
+      spawnDelay: 3
+      maxAmountWithOnePlayer: 4
+      maxAmountWithTwoPlayers: 6
+      bonusEnemyNumbers: 040000000b00000012000000
+      enemyList:
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 16fe0f466c33d4c4d8a70de0ade258f6, type: 2}
+      - {fileID: 11400000, guid: 3572a5e3d6cca524a8dc43681c72070f, type: 2}
+      - {fileID: 11400000, guid: 3572a5e3d6cca524a8dc43681c72070f, type: 2}
+  PowerUp:
+    Spawner:
+      prefab: {fileID: 9074238464579423729, guid: 65707b202d887924288a065320f105e8, type: 3}
+      powerUps:
+      - {fileID: 11400000, guid: 56218331e90da1e40b6ba7bb7a767666, type: 2}
+      - {fileID: 11400000, guid: 5cf819626b044a24e891bbfc1d3f207f, type: 2}
+      - {fileID: 11400000, guid: 2d116e33845c07345b14171556858bb9, type: 2}
+      - {fileID: 11400000, guid: 33095374b13b0bd4d898289010c354a2, type: 2}
+      - {fileID: 11400000, guid: c030e1b7d3bda4b41ad70244e2d10438, type: 2}
+      - {fileID: 11400000, guid: 14bb20854d0695c4386baf092c820def, type: 2}
+      - {fileID: 11400000, guid: 5cf819626b044a24e891bbfc1d3f207f, type: 2}
+      - {fileID: 11400000, guid: 33095374b13b0bd4d898289010c354a2, type: 2}
